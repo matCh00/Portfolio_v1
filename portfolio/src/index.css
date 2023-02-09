@@ -51,7 +51,11 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  /* background-image: url(../src/assets/ep_naturalblack.png); */
+  background-image: url(../src/assets/dark-leather.png);
+
+  /*
+    https://www.transparenttextures.com/
+  */
 }
 
 /* podstawowe style */
