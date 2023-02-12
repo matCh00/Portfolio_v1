@@ -1,6 +1,6 @@
 header {
   min-height: 100vh;
-  padding: 3rem 0 0 0;
+  padding: 3rem 0 6rem 0;
   overflow: hidden;
 }
 
@@ -17,6 +17,10 @@ header {
   margin-top: 15vh;
 }
 
+.header__content h4 {
+  color: var(--color-primary);
+}
+
 
 /** image */
 .me {
@@ -24,10 +28,22 @@ header {
   height: auto;
   position: relative;
   left: calc(50% - 15rem);
-  overflow: hidden;
+  border-radius: 3rem;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary-variant),
+    transparent
+  );
 }
 .me__img {
-  border-radius: 4rem;
+  border-radius: 3rem;
+  transform: rotate(-5deg);
+  transition: var(--transition);
+  overflow: hidden;
+}
+.me__img:hover {
+  transform: rotate(0);
 }
 
 

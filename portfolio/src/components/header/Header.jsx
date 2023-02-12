@@ -16,9 +16,9 @@ const Header = () => {
         </div>
 
         <div className='header__content'>
-          <h5>Cześć! Nazywam się</h5>
+          <h4 className="text-light">Cześć! Nazywam się</h4>
           <h1>Mateusz</h1>
-          <h5 className="text-light">Frontend developer</h5>
+          <h4>Jestem frontend developerem</h4>
 
           <Actions />
         </div>

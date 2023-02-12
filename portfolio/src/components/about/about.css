@@ -60,7 +60,7 @@
 /* mały ekran */
 @media screen and (max-width: 600px) {
   .about__cards {
-    width: 100%;
+    width: 90%;
     gap: 1rem;
   }
 }
