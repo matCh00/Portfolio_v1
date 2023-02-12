@@ -1,0 +1,66 @@
+.about__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__cards {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.about__card {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.about__card:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
+}
+
+.about__card h5 {
+  font-size: 0.9rem;
+}
+
+.about__card small {
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+
+.about__icon {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.about__container p {
+  color: var(--color-light);
+  margin: 2rem;
+  text-align: center;
+}
+
+
+/* średni ekran */
+@media screen and (max-width: 1024px) {
+  .about__cards {
+    width: 75%;
+    gap: 2rem;
+  }
+}
+
+
+/* mały ekran */
+@media screen and (max-width: 600px) {
+  .about__cards {
+    width: 100%;
+    gap: 1rem;
+  }
+}

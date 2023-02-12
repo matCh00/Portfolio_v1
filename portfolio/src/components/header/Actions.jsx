@@ -9,7 +9,7 @@ const Actions = () => {
     <div className='actions'>
 
       <a href={CV} download className='btn btn-primary'>Pobierz CV</a>
-      <a href="#contact" className='btn'>Szybka wiadomość</a>
+      <a href="#contact" className='btn'>Kontakt</a>
 
     </div>
   )

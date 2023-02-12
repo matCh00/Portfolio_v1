@@ -2,6 +2,8 @@ import React from 'react';
 import './socials.css';
 import {BsLinkedin, BsGithub} from 'react-icons/bs';
 
+/** skróty do social mediów */
+
 const Socials = () => {
   return (
     <div className='socials'>

@@ -87,7 +87,7 @@ section > h2 {
   margin-bottom: 3rem;
 }
 
-.text-lights {
+.text-light {
   color: var(--color-light);
 }
 
@@ -128,6 +128,7 @@ img {
   object-fit: cover;
 }
 
+
 /* średni ekran */
 @media screen and (max-width: 1024px) {
   .container {
@@ -138,6 +139,7 @@ img {
     margin-top: 6rem;
   }
 }
+
 
 /* mały ekran */
 @media screen and (max-width: 600px) {

@@ -4,6 +4,8 @@ import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai';
 import {BiBook, BiMessageSquareDetail} from 'react-icons/bi';
 import {RiServiceLine} from 'react-icons/ri';
 
+/** Pasek nawigacji */
+
 const Nav = () => {
 
   const [activeNav, setActiveNav] = useState('#');

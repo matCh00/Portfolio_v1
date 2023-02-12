@@ -11,18 +11,19 @@ const Header = () => {
     <header>
       <div className="container header__container">
 
-        <h5>Cześć! Nazywam się</h5>
-        <h1>Mateusz</h1>
-        <h5 className="text-light">Jestem frontend developerem</h5>
-
-        <Actions />
-        <Socials />
-
         <div className="me">
           <img src={ME} alt="me" className='me__img'/>
         </div>
 
-        <a href="#contact" className='scroll__down'>Kontakt</a>
+        <div className='header__content'>
+          <h5>Cześć! Nazywam się</h5>
+          <h1>Mateusz</h1>
+          <h5 className="text-light">Frontend developer</h5>
+
+          <Actions />
+        </div>
+        
+        <Socials />
 
       </div>
     </header>
