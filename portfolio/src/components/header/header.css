@@ -1,6 +1,6 @@
 header {
   min-height: 100vh;
-  padding-top: 3rem;
+  padding: 3rem 0 0 0;
   overflow: hidden;
 }
 
@@ -20,7 +20,7 @@ header {
 
 /** image */
 .me {
-  width: 90%;
+  width: 80%;
   height: auto;
   position: relative;
   left: calc(50% - 15rem);

@@ -35,15 +35,20 @@ const Nav = () => {
   /** podświetlanie sekcji */
   const handleScroll = () => {
     let s = window.scrollY;
-    if (s + aboutRect.height/2 >= aboutRect.top && s + aboutRect.height/2 < experienceRect.top) 
+    let aboutTop = headerRect.height;
+    let experienceTop = headerRect.height + aboutRect.height;
+    let servicesTop = headerRect.height + aboutRect.height + experienceRect.height;
+    let contactTop = headerRect.height + aboutRect.height + experienceRect.height + servicesRect.height;
+
+    if (s + aboutRect.height/2 >= aboutTop && s + aboutRect.height/2 < experienceTop) 
       highlight('#about');
-    else if (s + experienceRect.height/2 >= experienceRect.top && s + experienceRect.height/2 < servicesRect.top) 
+    else if (s + experienceRect.height/2 >= experienceTop && s + experienceRect.height/2 < servicesTop) 
       highlight('#experience');
-    else if (s + servicesRect.height/2 >= servicesRect.top && s + servicesRect.height/2 < contactRect.top) 
+    else if (s + servicesRect.height/2 >= servicesTop && s + servicesRect.height/2 < contactTop) 
       highlight('#services');
-    else if (s + contactRect.height/2 >= contactRect.top) 
+    else if (s + contactRect.height/2 >= contactTop) 
       highlight('#contact');
-    else if (s + headerRect.height/2 < experienceRect.top)
+    else if (s + headerRect.height/2 < experienceTop)
       highlight('#');
     else 
       highlight('');
@@ -60,6 +65,7 @@ const Nav = () => {
     setTestimonialsRect({top: document.getElementById('testimonials').getBoundingClientRect().top, height: document.getElementById('testimonials').getBoundingClientRect().height});
     setContactRect({top: document.getElementById('contact').getBoundingClientRect().top, height: document.getElementById('contact').getBoundingClientRect().height});
   }
+
 
   /** początkowe ustawnienie wymiarów */
   useLayoutEffect(() => {
@@ -81,7 +87,7 @@ const Nav = () => {
   /** nasłuchiwanie zmiany wymiarów strony */
   useEffect(() => {
     const handleResize = () => {
-      setPos();    
+      setPos();
     }
     window.addEventListener('resize', handleResize);
     return () => {
