@@ -8,7 +8,7 @@ import Socials from './Socials';
 
 const Header = () => {
   return (
-    <header>
+    <header id='header'>
       <div className="container header__container">
 
         <div className="me">

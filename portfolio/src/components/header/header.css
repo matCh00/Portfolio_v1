@@ -1,6 +1,6 @@
 header {
   min-height: 100vh;
-  padding-top: 7rem;
+  padding-top: 3rem;
   overflow: hidden;
 }
 
@@ -14,15 +14,16 @@ header {
 
 .header__content {
   position: relative;
-  top: 15vh;
+  margin-top: 15vh;
 }
 
 
 /** image */
 .me {
-  width: 22rem;
+  width: 90%;
+  height: auto;
   position: relative;
-  left: calc(50% - 11rem);
+  left: calc(50% - 15rem);
   overflow: hidden;
 }
 .me__img {
@@ -34,6 +35,10 @@ header {
 @media screen and (max-width: 1024px) {
   .socials {
     display: none !important;
+  }
+  .me {
+    width: 20rem;
+    left: calc(50% - 10rem);
   }
 }
 
@@ -52,6 +57,6 @@ header {
     text-align: center;
   }
   .header__content {
-    top: 5vh;
+    margin-top: 5vh;
   }
 }

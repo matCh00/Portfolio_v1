@@ -35,7 +35,7 @@ const About = () => {
           Pracę inżynierską napisałem dla odmiany w React Native, była to aplikacja mobilna do treningów.
         </p>
 
-        <a href="#contact" className='btn btn-primary'>Skontaktujmy się!</a>
+        <a href="#contact" className='btn btn-primary'>Zadaj pytanie</a>
       </div>
 
     </section>
