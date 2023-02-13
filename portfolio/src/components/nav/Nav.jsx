@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useLayoutEffect } from 'react';
 import './nav.css';
-import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai';
-import {BiBook, BiMessageSquareDetail} from 'react-icons/bi';
+import {AiOutlineHome, AiOutlineUser, AiOutlineStar, AiOutlineFundProjectionScreen} from 'react-icons/ai';
+import {BsChatQuote} from 'react-icons/bs';
 import {RiServiceLine} from 'react-icons/ri';
 
 /** Pasek nawigacji */
@@ -36,16 +36,19 @@ const Nav = () => {
   const handleScroll = () => {
     let s = window.scrollY;
     let aboutTop = headerRect.height;
-    let experienceTop = headerRect.height + aboutRect.height;
-    let servicesTop = headerRect.height + aboutRect.height + experienceRect.height;
-    let contactTop = headerRect.height + aboutRect.height + experienceRect.height + servicesRect.height;
+    let experienceTop = aboutTop + aboutRect.height;
+    let servicesTop = experienceTop + experienceRect.height;
+    let portfolioTop = servicesTop + servicesRect.height;
+    let contactTop = portfolioTop + portfolioRect.height;
 
     if (s + aboutRect.height/2 >= aboutTop && s + aboutRect.height/2 < experienceTop) 
       highlight('#about');
     else if (s + experienceRect.height/2 >= experienceTop && s + experienceRect.height/2 < servicesTop) 
       highlight('#experience');
-    else if (s + servicesRect.height/2 >= servicesTop && s + servicesRect.height/2 < contactTop) 
+    else if (s + servicesRect.height/2 >= servicesTop && s + servicesRect.height/2 < portfolioTop) 
       highlight('#services');
+    else if (s + portfolioRect.height/2 >= portfolioTop && s + portfolioRect.height/2 < contactTop) 
+      highlight('#portfolio');
     else if (s + contactRect.height/2 >= contactTop) 
       highlight('#contact');
     else if (s + headerRect.height/2 < experienceTop)
@@ -112,17 +115,22 @@ const Nav = () => {
       <a href="#experience" 
         // onClick={() => {highlight('#experience')}} 
         className={checkIsActive('#experience')}
-      ><BiBook/></a>
+      ><AiOutlineStar/></a>
 
       <a href="#services" 
         // onClick={() => {highlight('#services')}} 
         className={checkIsActive('#services')}
       ><RiServiceLine/></a>
 
+      <a href="#portfolio" 
+        // onClick={() => {highlight('#portfolio')}} 
+        className={checkIsActive('#portfolio')}
+      ><AiOutlineFundProjectionScreen/></a>
+
       <a href="#contact" 
         // onClick={() => {highlight('#contact')}} 
         className={checkIsActive('#contact')}
-      ><BiMessageSquareDetail/></a>
+      ><BsChatQuote/></a>
 
     </nav>
   )
