@@ -28,6 +28,7 @@
 .portfolio__item-btn {
   display: flex;
   grid-area: 1rem;
+  user-select: none;
 }
 
 .portfolio__image-container {
@@ -37,6 +38,7 @@
 .portfolio__image {
   border-radius: 0.6rem;
   right: 0;
+  user-select: none;
 }
 
 
