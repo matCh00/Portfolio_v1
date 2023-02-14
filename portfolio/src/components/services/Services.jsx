@@ -2,6 +2,8 @@ import React from 'react';
 import './services.css';
 import {BiCheck} from 'react-icons/bi';
 
+/** Usługi */
+
 const Services = () => {
 
   const services = [
@@ -22,7 +24,6 @@ const Services = () => {
       {key: 'Tworzenie aplikacji mobilnej'},
       {key: 'Responsywność interfejsu'},
       {key: 'Znajomość hooków'},
-      {key: 'Dobre praktyki UI/UX'},
     ]}
   ]
   return (
@@ -35,7 +36,7 @@ const Services = () => {
 
         {services.map(s => {
           return (
-            <article className="service">
+            <article className="service" key={s.key}>
               <div className="service__head">
                 <h3>{s.key}</h3>
               </div>
@@ -43,7 +44,7 @@ const Services = () => {
               <ul className="service__list">
                 {s.values.map(v => {
                   return (
-                    <li>
+                    <li key={v.key}>
                       <BiCheck className='service__list-icon' />
                       <p>{v.key}</p>
                     </li>
