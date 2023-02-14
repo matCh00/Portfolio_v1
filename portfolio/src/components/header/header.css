@@ -24,10 +24,10 @@ header {
 
 /** image */
 .me {
-  width: 80%;
+  width: 28vw;
   height: auto;
   position: relative;
-  left: calc(50% - 15rem);
+  left: calc(50% - 14vw);
   border-radius: 3rem;
   background: linear-gradient(
     45deg,
