@@ -2,6 +2,8 @@ import React from 'react';
 import './footer.css';
 import {FaFacebook} from 'react-icons/fa'
 
+/** Stopka */
+
 const Footer = () => {
   return (
     <footer>
@@ -18,7 +20,7 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.facebook.com/mateusz.chalik/"><FaFacebook/></a>
+        <a href="https://www.facebook.com/mateusz.chalik/" target={'_blank'}><FaFacebook/></a>
       </div>
 
       <div className="footer__copyright">

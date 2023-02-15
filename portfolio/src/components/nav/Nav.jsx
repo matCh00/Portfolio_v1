@@ -65,7 +65,7 @@ const Nav = () => {
     setExperienceRect({top: document.getElementById('experience').getBoundingClientRect().top, height: document.getElementById('experience').getBoundingClientRect().height});
     setServicesRect({top: document.getElementById('services').getBoundingClientRect().top, height: document.getElementById('services').getBoundingClientRect().height});
     setPortfolioRect({top: document.getElementById('portfolio').getBoundingClientRect().top, height: document.getElementById('portfolio').getBoundingClientRect().height});
-    setTestimonialsRect({top: document.getElementById('testimonials').getBoundingClientRect().top, height: document.getElementById('testimonials').getBoundingClientRect().height});
+    //setTestimonialsRect({top: document.getElementById('testimonials').getBoundingClientRect().top, height: document.getElementById('testimonials').getBoundingClientRect().height});
     setContactRect({top: document.getElementById('contact').getBoundingClientRect().top, height: document.getElementById('contact').getBoundingClientRect().height});
   }
 

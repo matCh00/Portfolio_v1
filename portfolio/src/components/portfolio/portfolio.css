@@ -2,14 +2,24 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
+  transition: var(--transition);
+  transform:
+    perspective(750px)
+    translate3d(0px, -100px, -100px)
+    rotateX(25deg)
+    scale(0.95, 1);
+}
+
+.portfolio__container:hover {
+  transform: translate3d(0px, 0px, -200px);
 }
 
 .portfolio__item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   background: var(--color-bg-variant);
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 0.5rem 2.5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
@@ -20,8 +30,22 @@
   background: transparent;
 }
 
+.portfolio__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  margin-right: 1rem;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .portfolio__item h3 {
-  margin: 0 0 2rem;
   text-align: center;
 }
 
@@ -43,12 +67,11 @@
 
 
 .portfolio__carousel {
-  width: 23rem;
-  margin-bottom: 2rem;
+  width: 18rem;
 }
 
 .carousel.carousel-slider {
-  padding: 0 4rem 3rem 4rem;
+  padding: 0 0 3rem 0;
   display: flex;
   justify-content: center;
 }
@@ -65,9 +88,33 @@
 
 /* średni ekran */
 @media screen and (max-width: 1024px) {
+  .portfolio__container {
+    transform:
+      perspective(750px)
+      translate3d(0px, 0px, -150px)
+      rotateX(20deg)
+      scale(0.95, 1);
+  }
+  .portfolio__container:hover {
+    transform:
+      perspective(750px)
+      translate3d(0px, 0px, -150px)
+      rotateX(20deg)
+      scale(0.95, 1);
+  }
 }
 
 
 /* mały ekran */
 @media screen and (max-width: 600px) {
+  .portfolio__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio__item-btn {
+    margin: 2rem 0;
+  }
+  .portfolio__description {
+    gap: 0;
+  }
 }
