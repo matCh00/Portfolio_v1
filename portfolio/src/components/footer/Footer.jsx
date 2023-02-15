@@ -19,9 +19,9 @@ const Footer = () => {
         <li><a href="#contact">Kontakt</a></li>
       </ul>
 
-      <div className="footer__socials">
+      {/* <div className="footer__socials">
         <a href="https://www.facebook.com/mateusz.chalik/" target={'_blank'}><FaFacebook/></a>
-      </div>
+      </div> */}
 
       <div className="footer__copyright">
         <small>&copy; Mateusz Chalik. Wszelkie prawa zastrzeżone.</small>
