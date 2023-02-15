@@ -2,6 +2,17 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
+}
+
+.portfolio__item {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  align-items: center;
+  background: var(--color-bg-variant);
+  padding: 2.5rem 2.5rem 0.5rem 2.5rem;
+  margin-bottom: -5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
   transition: var(--transition);
   transform:
     perspective(750px)
@@ -10,24 +21,10 @@
     scale(0.95, 1);
 }
 
-.portfolio__container:hover {
-  transform: translate3d(0px, 0px, -200px);
-}
-
-.portfolio__item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  background: var(--color-bg-variant);
-  padding: 2.5rem 2.5rem 0.5rem 2.5rem;
-  border-radius: 2rem;
-  border: 1px solid transparent;
-  transition: var(--transition);
-}
-
 .portfolio__item:hover {
   border-color: var(--color-primary-variant);
   background: transparent;
+  transform: translate3d(0px, 0px, -200px);
 }
 
 .portfolio__description {
@@ -49,6 +46,10 @@
   text-align: center;
 }
 
+.portfolio__item h4 {
+  color: var(--color-light);
+}
+
 .portfolio__item-btn {
   display: flex;
   grid-area: 1rem;
@@ -56,7 +57,7 @@
 }
 
 .portfolio__image-container {
-  margin: 0 1rem;
+  margin: 0 3rem;
 }
 
 .portfolio__image {
@@ -67,7 +68,7 @@
 
 
 .portfolio__carousel {
-  width: 18rem;
+  width: 21rem;
 }
 
 .carousel.carousel-slider {
@@ -88,19 +89,22 @@
 
 /* średni ekran */
 @media screen and (max-width: 1024px) {
-  .portfolio__container {
+  .portfolio__item {
     transform:
       perspective(750px)
       translate3d(0px, 0px, -150px)
       rotateX(20deg)
       scale(0.95, 1);
   }
-  .portfolio__container:hover {
+  .portfolio__item:hover {
     transform:
       perspective(750px)
       translate3d(0px, 0px, -150px)
       rotateX(20deg)
       scale(0.95, 1);
+  }
+  .portfolio__container {
+    margin-top: -5rem;
   }
 }
 
@@ -116,5 +120,9 @@
   }
   .portfolio__description {
     gap: 0;
+  }
+  .portfolio__container {
+    margin-top: -8rem;
+    margin-bottom: 4rem;
   }
 }

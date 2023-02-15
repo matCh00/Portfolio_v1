@@ -49,9 +49,9 @@ const Nav = () => {
       highlight('#services');
     else if (s + portfolioRect.height/2 >= portfolioTop && s + portfolioRect.height/2 < contactTop) 
       highlight('#portfolio');
-    else if (s + contactRect.height/2 >= contactTop) 
+    else if (s + contactRect.height >= contactTop) 
       highlight('#contact');
-    else if (s + headerRect.height/2 < experienceTop)
+    else if (s + headerRect.height < experienceTop)
       highlight('#');
     else 
       highlight('');

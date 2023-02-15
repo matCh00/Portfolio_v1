@@ -21,6 +21,8 @@ const Portfolio = () => {
 
           <div className="portfolio__description">
             <h3 dangerouslySetInnerHTML={{__html: '<strong>GymApp</strong> <br> Aplikacja mobilna do zarządzania oraz monitorowania treningów'}}></h3>
+            
+            <h4>React Native + TypeScript + Firebase</h4>
 
             <div className="portfolio__item-btn">
               <a href="https://github.com/matCh00/GymApp" target={'_blank'} className='btn'> GitHub </a>
