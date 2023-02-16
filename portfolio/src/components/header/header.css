@@ -1,6 +1,6 @@
 header {
   min-height: 100vh;
-  padding: 3rem 0 6rem 0;
+  padding: 3rem 0 12rem 0;
   overflow: hidden;
 }
 
@@ -56,17 +56,6 @@ header {
     width: 20rem;
     left: calc(50% - 10rem);
   }
-}
-
-
-/* mały ekran */
-@media screen and (max-width: 600px) {
-  .socials {
-    display: none !important;
-  }
-  header {
-    padding-top: 2rem;
-  }
   .header__container {
     position: relative;
     display: block;
@@ -74,5 +63,13 @@ header {
   }
   .header__content {
     margin-top: 5vh;
+  }
+}
+
+
+/* mały ekran */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 3rem 0 2rem 0;
   }
 }

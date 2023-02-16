@@ -1,5 +1,5 @@
 .contact__container {
-  width: 50%;
+  width: 80%;
   display: flex;
   justify-content: center;
 }
@@ -39,7 +39,6 @@
 /* średni ekran */
 @media screen and (max-width: 1024px) {
   .contact__options {
-    grid-template-columns: 1fr;
     gap: 2rem;
   }
 }
@@ -49,5 +48,7 @@
 @media screen and (max-width: 600px) {
   .contact__options {
     width: var(--container-width-sm);
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
