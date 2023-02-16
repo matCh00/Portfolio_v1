@@ -21,6 +21,12 @@
     scale(0.95, 1);
 }
 
+.portfolio__item:hover {
+  border-color: var(--color-primary-variant);
+  background: var(--color-secondary);
+  transform: translate3d(0px, 0px, -200px);
+}
+
 .portfolio__item:not(:last-child) {
   margin-bottom: -2rem;
 }
@@ -28,12 +34,6 @@
 .portfolio__item-desktop {
   display: flex;
   flex-direction: column;
-}
-
-.portfolio__item:hover {
-  border-color: var(--color-primary-variant);
-  background: transparent;
-  transform: translate3d(0px, 0px, -200px);
 }
 
 .portfolio__description {
@@ -69,7 +69,6 @@
 
 .portfolio__image-container {
   margin: 0 3rem;
-  border: 1px solid rgba(77, 181, 255, 0.15);
   border-radius: 0.6rem;
 }
 
