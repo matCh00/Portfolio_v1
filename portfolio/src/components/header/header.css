@@ -1,14 +1,10 @@
 header {
-  min-height: 100vh;
   padding: 3rem 0 12rem 0;
   overflow: hidden;
 }
 
 .header__container {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
   text-align: center;
 }
 
@@ -21,13 +17,9 @@ header {
   color: var(--color-primary);
 }
 
-
-/** image */
 .me {
-  width: 28vw;
   height: auto;
   position: relative;
-  left: calc(50% - 14vw);
   border-radius: 3rem;
   background: linear-gradient(
     45deg,
@@ -36,6 +28,7 @@ header {
     transparent
   );
 }
+
 .me__img {
   border-radius: 3rem;
   transform: rotate(-5deg);
@@ -52,15 +45,6 @@ header {
   .socials {
     display: none !important;
   }
-  .me {
-    width: 20rem;
-    left: calc(50% - 10rem);
-  }
-  .header__container {
-    position: relative;
-    display: block;
-    text-align: center;
-  }
   .header__content {
     margin-top: 5vh;
   }
@@ -71,5 +55,34 @@ header {
 @media screen and (max-width: 600px) {
   header {
     padding: 3rem 0 2rem 0;
+  }
+}
+
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+  header {
+    padding-top: 5rem;
+  }
+  .header__container {
+    display: block;
+  }
+  .me {
+    width: 60vw;
+    left: calc(50% - 30vw);
+  }
+}
+
+
+/* Landscape */
+@media screen and (orientation: landscape) {
+  .header__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 3rem;
+  }
+  .me {
+    width: 28vw;
+    left: calc(50% - 14vw);
   }
 }

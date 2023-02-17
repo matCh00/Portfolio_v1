@@ -31,3 +31,12 @@ nav a.active {
   background: var(--color-bg);
   color: var(--color-primary);
 }
+
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+  nav a {
+    padding: 1.5rem;
+    font-size: 3rem;
+  }
+}
