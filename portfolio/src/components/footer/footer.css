@@ -72,3 +72,11 @@ footer a {
     margin-bottom: 2rem;
   }
 }
+
+
+/* Portrait */
+@media screen and (orientation: portrait) {
+  .footer__copyright {
+    padding-bottom: 4rem;
+  }
+}
