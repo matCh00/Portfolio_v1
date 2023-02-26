@@ -57,8 +57,10 @@
 /* Portrait */
 @media screen and (orientation: portrait) {
   .contact__options {
-    width: var(--container-width-sm);
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    display: inline-block;
+  }
+  .contact__option {
+    display: block;
+    margin-bottom: 2em;
   }
 }

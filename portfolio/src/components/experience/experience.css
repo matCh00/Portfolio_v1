@@ -57,7 +57,7 @@
     padding: 0 1rem;
   }
   .experience__content {
-    columns: 12rem;
+    columns: 10rem;
   }
 }
 
@@ -71,6 +71,6 @@
     padding-right: 0;
   }
   .experience__content {
-    columns: 16rem;
+    columns: 12rem;
   }
 }

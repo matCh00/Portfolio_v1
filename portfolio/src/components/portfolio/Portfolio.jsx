@@ -1,7 +1,7 @@
 import React from 'react';
 import './portfolio.css';
 import { img1, img2, img3, img4, img5, img6, img7, img8, img9 } from '../../assets/GymApp';
-import { pc1, pc2, pc3, pc4, pc5, pc6 } from '../../assets/Portfolio';
+import { pc1, mobile1, pc5, mobile2 } from '../../assets/Portfolio';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -19,10 +19,10 @@ const Portfolio = () => {
       desktop: false
     },
     {
-      titleHtml: '<strong>Portfolio</strong> <br> Własna strona internetowa',
+      titleHtml: '<strong>Portfolio</strong> <br> Responsywna strona internetowa',
       technology: 'React + JavaScript + CSS',
       href: 'https://github.com/matCh00/Portfolio',
-      images: [pc1, pc2, pc3, pc4, pc5, pc6],
+      images: [pc1, mobile1, pc5, mobile2],
       carouselClass: 'portfolio__carousel-desktop',
       desktop: true
     }
