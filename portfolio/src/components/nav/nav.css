@@ -1,26 +1,24 @@
 nav {
-  background-color: rgba(0, 0, 0, 0.3);
-  width: max-content;
-  display: block;
-  padding: 0.7rem 1.7rem;
-  z-index: 2;
   position: fixed;
   left: 50%;
-  transform: translateX(-50%);
   bottom: 2rem;
   display: flex;
   gap: 0.8rem;
+  transform: translateX(-50%);
+  padding: 0.5rem 1.5rem;
   border-radius: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(15px);
+  z-index: 2;
 }
 
 nav a {
-  background: transparent;
+  font-size: 1.3rem;
+  display: flex;
   padding: 0.9rem;
   border-radius: 50%;
-  display: flex;
+  background: transparent;
   color: var(--color-light);
-  font-size: 1.1rem;
 }
 
 nav a:hover {
@@ -36,7 +34,7 @@ nav a.active {
 /* Portrait */
 @media screen and (orientation: portrait) {
   nav a {
-    padding: 1.5rem;
-    font-size: 3rem;
+    padding: clamp(.4em, .2em + 2vw, 1.5em);
+    font-size: clamp(1.1rem, .4rem + 4vw, 3rem);
   }
 }

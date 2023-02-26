@@ -22,17 +22,18 @@
   text-align: center;
   margin-bottom: 2rem;
   color: var(--color-primary);
+  white-space: nowrap;
 }
 
 .experience__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+  columns: 8rem;
 }
 
 .experience__details {
   display: flex;
   gap: 0.5rem;
+  break-inside: avoid-column;
+  margin-bottom: 2rem;
 }
 
 .experience__details-icon {
@@ -55,6 +56,9 @@
   .experience__content {
     padding: 0 1rem;
   }
+  .experience__content {
+    columns: 12rem;
+  }
 }
 
 
@@ -63,11 +67,10 @@
   .experience__container {
     gap: 1rem;
   }
-  .experience__container > div {
-    width: 100%;
-    padding: 1rem 2rem;
-  }
   .experience__content {
     padding-right: 0;
+  }
+  .experience__content {
+    columns: 16rem;
   }
 }

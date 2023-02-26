@@ -43,7 +43,7 @@ const Experience = () => {
                 <article key={e.key} className='experience__details'>
                   <BsPatchCheckFill className='experience__details-icon'/>
                   <div>
-                    <h4>{e.key}</h4>
+                    <h4 style={{whiteSpace: 'nowrap'}}>{e.key}</h4>
                     <small className='text-light'>{e.value}</small>
                   </div>
                 </article>
@@ -61,7 +61,7 @@ const Experience = () => {
                 <article key={e.key} className='experience__details'>
                   <BsPatchCheckFill className='experience__details-icon'/>
                   <div>
-                    <h4>{e.key}</h4>
+                    <h4 style={{whiteSpace: 'nowrap'}}>{e.key}</h4>
                     <small className='text-light'>{e.value}</small>
                   </div>
                 </article>
@@ -79,7 +79,7 @@ const Experience = () => {
                 <article key={e.key} className='experience__details'>
                   <BsPatchCheckFill className='experience__details-icon'/>
                   <div>
-                    <h4>{e.key}</h4>
+                    <h4 style={{whiteSpace: 'nowrap'}}>{e.key}</h4>
                     <small className='text-light'>{e.value}</small>
                   </div>
                 </article>
