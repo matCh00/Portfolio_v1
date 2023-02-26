@@ -17,6 +17,7 @@
   text-align: center;
   border: 1px solid transparent;
   transition: var(--transition);
+  display: block;
 }
 
 .contact__option:hover {
@@ -60,7 +61,8 @@
     display: inline-block;
   }
   .contact__option {
-    display: block;
+    display: table;
     margin-bottom: 2em;
+    width: 100%;
   }
 }
