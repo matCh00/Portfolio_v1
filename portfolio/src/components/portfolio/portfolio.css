@@ -58,6 +58,7 @@
 
 .portfolio__item h4 {
   color: var(--color-light);
+  text-align: center;
 }
 
 .portfolio__item-btn {

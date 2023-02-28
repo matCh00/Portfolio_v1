@@ -30,7 +30,7 @@ const About = () => {
         </div>
 
         <p>
-          Mam 0.5 roku doświadczenia w branży IT na stanowisku frontend developera. Pracuję w technologii Angular.
+          Mam 9 miesięcy doświadczenia w branży IT na stanowisku frontend developera. Pracuję w technologii Angular.
           Poza pracą napisałem kilka projektów na uczelni w różnych językach programowania.
           Pracę inżynierską napisałem dla odmiany w React Native, była to aplikacja mobilna do treningów.
         </p>
