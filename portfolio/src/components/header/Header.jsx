@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 import Actions from './Actions';
-import ME from '../../assets/personal/me.jpg';
+import ME from '../../assets/personal/me2.jpg';
 import Socials from './Socials';
 
 /** Nagłówek */

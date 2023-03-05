@@ -1,3 +1,24 @@
+:root {
+  --portrait-height: 28vw;
+  --portrait-width: calc(var(--portrait-height) / 1.5);
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 150deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+
 header {
   padding: 3rem 0 12rem 0;
   overflow: hidden;
@@ -6,6 +27,7 @@ header {
 .header__container {
   position: relative;
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .header__content {
@@ -17,21 +39,40 @@ header {
   color: var(--color-primary);
 }
 
+
+/* portret */
 .me {
-  height: auto;
   position: relative;
-  border-radius: 3rem;
-  background: linear-gradient(
-    45deg,
-    transparent,
-    var(--color-primary-variant),
-    transparent
-  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* orb wkoło portretu */
+.me::after {
+  position: absolute;
+  z-index: -1;
+
+  height: 100%;
+  width: 100%;
+
+  transform: scale(0.9);
+  opacity: 1;
+  transition: opacity .7s;
+
+  filter: blur(calc(var(--portrait-height) / 8));
+
+  background-image: linear-gradient(var(--rotate), #4db5ff, #ffffff99 43%, #4db5ff66);
+
+  content: "";
+
+  animation: spin 2.5s linear infinite;
 }
 
 .me__img {
-  border-radius: 3rem;
-  transform: rotate(-5deg);
+  border-radius: 1.5rem;
+  transform: rotate(-3deg);
   transition: var(--transition);
   overflow: hidden;
 }
@@ -70,6 +111,10 @@ header {
   .me {
     width: 60vw;
     left: calc(50% - 30vw);
+    padding-bottom: 2rem;
+  }
+  :root {
+    --portrait-height: 60vw;
   }
 }
 
@@ -82,7 +127,10 @@ header {
     gap: 3rem;
   }
   .me {
-    width: 28vw;
+    width: 27vw;
     left: calc(50% - 14vw);
+  }
+  :root {
+    --portrait-height: 28vw;
   }
 }

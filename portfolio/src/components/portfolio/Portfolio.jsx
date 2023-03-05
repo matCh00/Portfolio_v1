@@ -39,7 +39,7 @@ const Portfolio = () => {
         {projects.map(project => {
           return (
 
-            <article className={project.desktop ? 'portfolio__item portfolio__item-desktop' : 'portfolio__item'}>
+            <article key={project.titleHtml} className={project.desktop ? 'portfolio__item portfolio__item-desktop' : 'portfolio__item'}>
 
               <div className="portfolio__description">
                 <h3 dangerouslySetInnerHTML={{__html: project.titleHtml}}></h3>

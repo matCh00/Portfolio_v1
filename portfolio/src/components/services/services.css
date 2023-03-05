@@ -56,6 +56,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+  .service__head h3 {
+    font-size: 0.6rem;
+  }
 }
 
 
