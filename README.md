@@ -1,2 +1,3 @@
 # Portfolio
-Projekt portfolio w React
+
+React + JavaScript
