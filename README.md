@@ -1,18 +1,4 @@
 # Portfolio
 React + JavaScript
 
-## Web
-
-<details>
-  <summary>screenshots</summary>
-  <img src="README/desktop-nav.png">
-  <img src="README/desktop-full.png">
-</details>
-
-## Mobile
-
-<details>
-  <summary>screenshots</summary>
-  <img src="README/mobile-nav.png">
-  <img src="README/mobile-full.png">
-</details>
+### [matCh00.github.io/Portfolio_v1](https://match00.github.io/Portfolio_v1/)
