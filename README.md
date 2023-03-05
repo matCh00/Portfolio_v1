@@ -8,7 +8,6 @@ React + JavaScript
   <img src="README/desktop-nav.png">
   <img src="README/desktop-full.png">
 </details>
-<br/>
 
 ## Mobile
 
