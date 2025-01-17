@@ -23,7 +23,7 @@ const About = () => {
       return `${years} ${(years === 2 || years === 3 || years === 4) ? 'lata' : 'lat'}`;
     }
     return `${years} ${(years === 2 || years === 3 || years === 4) ? 'lata' : 'lat'}` + ` i ${months} miesięcy`;
-}
+  }
 
   return (
     <section id='about'>
