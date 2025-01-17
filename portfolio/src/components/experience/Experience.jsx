@@ -7,23 +7,23 @@ import {BsPatchCheckFill} from 'react-icons/bs';
 const Experience = () => {
 
   const experienceFront = [
-    {key: 'Angular', value: 'Bardzo dobry'},
-    {key: 'TypeScript', value: 'Bardzo dobry'},
-    {key: 'PrimeNg', value: 'Bardzo dobry'},
-    {key: 'Primeflex', value: 'Bardzo dobry'},
-    {key: 'React', value: 'Dobry'},
-    {key: 'JavaScript', value: 'Dobry'},
-    {key: 'HTML', value: 'Bardzo dobry'},
-    {key: 'CSS/SCSS', value: 'Dobry'},
+    {key: 'Angular', value: ''},
+    {key: 'TypeScript', value: ''},
+    {key: 'PrimeNg', value: ''},
+    {key: 'Primeflex', value: ''},
+    {key: 'React', value: ''},
+    {key: 'JavaScript', value: ''},
+    {key: 'HTML', value: ''},
+    {key: 'CSS/SCSS', value: ''},
   ]
 
   const experienceBackend = [
-    {key: 'Python', value: 'Początkujący'},
-    {key: 'Firebase', value: 'Dobry'},
+    {key: 'Python', value: ''},
+    {key: 'Firebase', value: ''},
   ]
 
   const experienceMobile = [
-    {key: 'React Native', value: 'Bardzo dobry'},
+    {key: 'React Native', value: ''},
   ]
 
   return (

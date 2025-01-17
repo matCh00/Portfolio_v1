@@ -28,7 +28,7 @@
 }
 
 .portfolio__item:not(:last-child) {
-  margin-bottom: -2rem;
+  margin-bottom: 2rem;
 }
 
 .portfolio__item-desktop {
@@ -85,7 +85,7 @@
 }
 
 .portfolio__carousel-desktop {
-  width: 50rem;
+  width: 40rem;
 }
 
 .carousel.carousel-slider {

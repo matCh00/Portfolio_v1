@@ -1,7 +1,8 @@
 import React from 'react';
 import './portfolio.css';
 import { img1, img2, img3, img4, img5, img6, img7, img8, img9 } from '../../assets/GymApp';
-import { pc1, mobile1, pc5, mobile2 } from '../../assets/Portfolio';
+import { img1_18, img2_18, img3_18, img4_18, img5_18, img6_18, img7_18 } from '../../assets/JustTravel18';
+import { img1_10, img2_10, img3_10, img4_10, img5_10, img6_10, img7_10 } from '../../assets/JustTravel10';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -11,6 +12,22 @@ const Portfolio = () => {
 
   const projects = [
     {
+      titleHtml: '<strong>JustTravel</strong> <br> Aplikacja do tworzenia podrózy',
+      technology: 'Angular 18 + TypeScript',
+      href: 'https://github.com/matCh00/JustTravel-Angular18',
+      images: [img1_18, img2_18, img3_18, img4_18, img5_18, img6_18, img7_18],
+      carouselClass: 'portfolio__carousel-desktop',
+      desktop: false
+    },
+    {
+      titleHtml: '<strong>JustTravel</strong> <br> Aplikacja do tworzenia podrózy',
+      technology: 'Angular 10 + TypeScript',
+      href: 'https://github.com/matCh00/JustTravel-Angular10',
+      images: [img1_10, img2_10, img3_10, img4_10, img5_10, img6_10, img7_10],
+      carouselClass: 'portfolio__carousel-desktop',
+      desktop: false
+    },
+    {
       titleHtml: '<strong>GymApp</strong> <br> Aplikacja mobilna do zarządzania oraz monitorowania treningów',
       technology: 'React Native + TypeScript + Firebase',
       href: 'https://github.com/matCh00/GymApp',
@@ -18,14 +35,6 @@ const Portfolio = () => {
       carouselClass: 'portfolio__carousel-mobile',
       desktop: false
     },
-    {
-      titleHtml: '<strong>Portfolio</strong> <br> Responsywna strona internetowa',
-      technology: 'React + JavaScript + CSS',
-      href: 'https://github.com/matCh00/Portfolio',
-      images: [pc1, mobile1, pc5, mobile2],
-      carouselClass: 'portfolio__carousel-desktop',
-      desktop: true
-    }
   ]
 
   return (
